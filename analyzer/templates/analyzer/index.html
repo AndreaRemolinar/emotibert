@@ -1,0 +1,212 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EmotiBert</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+        html {
+            font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+
+    <link rel="stylesheet" href="{% static 'analyzer/css/styles.css' %}">
+</head>
+
+<body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed">
+
+    <div class="h-full">
+        <!--Nav-->
+        <div class="w-full container mx-auto">
+            <div class="w-full flex items-center justify-between">
+                <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-5x4 lg:text-4xl"
+                    href="#">
+                    <svg width="41" height="37" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+                        <g transform="translate(-2071 -914)">
+                            <path
+                                d="M2083.13 918.102 2082.93 918.162 2082.6 918.294 2082.3 918.444 2082 918.629 2081.84 918.742 2081.63 918.903 2081.21 919.28 2080.81 919.709 2080.44 920.187 2080.1 920.702 2079.79 921.256 2079.52 921.835 2079.29 922.438 2079.19 922.75 2079.15 922.915 2079.07 923.281 2079.02 923.668 2079 924.071 2079 924.466 2079.02 924.85 2079.08 925.2 2079.15 925.505 2079.2 925.633 2079.24 925.746 2079.35 925.96 2079.48 926.171 2079.63 926.367 2079.79 926.559 2079.97 926.736 2080.27 926.984 2080.73 927.278 2081.24 927.518 2081.8 927.71 2082.4 927.85 2082.72 927.891 2083.11 927.936 2083.69 927.989 2084.16 928 2084.65 927.963 2084.95 927.929 2085.3 927.883 2085.85 927.789 2086.3 927.673 2086.76 927.5 2087.02 927.383 2087.2 927.3 2087.53 927.108 2087.83 926.894 2088.1 926.649 2088.33 926.378 2088.53 926.081 2088.7 925.757 2088.84 925.407 2088.89 925.219 2088.94 925.012 2089 924.56 2089 924.067 2088.94 923.544 2088.83 923.002 2088.68 922.445 2088.48 921.892 2088.23 921.342 2088.08 921.075 2087.93 920.8 2087.6 920.292 2087.26 919.829 2086.89 919.412 2086.5 919.043 2086.1 918.723 2085.68 918.452 2085.24 918.234 2085.02 918.143 2084.93 918.113 2084.71 918.064 2084.34 918.015 2083.81 918 2083.43 918.034 2083.21 918.075 2083.13 918.102Z"
+                                fill="#FFF" fill-rule="evenodd" />
+                            <path
+                                d="M2098.34 918.019 2098.24 918.045 2097.84 918.203 2097.61 918.309 2097.43 918.391 2097.06 918.613 2096.69 918.891 2096.32 919.219 2095.96 919.583 2095.62 919.975 2095.31 920.388 2095.04 920.813 2094.92 921.028 2094.78 921.291 2094.55 921.795 2094.36 922.284 2094.21 922.754 2094.1 923.216 2094.03 923.668 2094.01 924.115 2094.03 924.559 2094.05 924.946 2094.11 925.255 2094.19 925.541 2094.3 925.811 2094.43 926.063 2094.59 926.3 2094.78 926.53 2095 926.748 2095.12 926.857 2095.25 926.962 2095.53 927.154 2095.83 927.327 2096.15 927.477 2096.51 927.605 2096.89 927.718 2097.32 927.812 2097.79 927.891 2098.04 927.921 2098.3 927.955 2098.72 927.993 2099.06 928 2099.43 927.978 2099.66 927.955 2100.02 927.914 2100.69 927.805 2101.29 927.658 2101.83 927.474 2102.07 927.365 2102.21 927.297 2102.48 927.143 2102.73 926.97 2102.95 926.782 2103.16 926.579 2103.34 926.357 2103.5 926.124 2103.64 925.872 2103.76 925.612 2103.85 925.334 2103.93 925.048 2103.98 924.747 2104 924.439 2104 924.119 2103.98 923.792 2103.93 923.457 2103.9 923.284 2103.84 923.058 2103.73 922.618 2103.58 922.186 2103.42 921.768 2103.24 921.362 2103.03 920.971 2102.81 920.599 2102.58 920.242 2102.32 919.907 2102.06 919.591 2101.77 919.298 2101.48 919.031 2101.17 918.786 2100.86 918.568 2100.53 918.376 2100.2 918.218 2100.03 918.151 2099.89 918.105 2099.46 918.038 2098.95 918 2098.49 918 2098.34 918.019Z"
+                                fill="#FFF" fill-rule="evenodd" />
+                            <path
+                                d="M2102.95 931.033 2101.99 931.2 2101.07 931.368 2100.23 931.525 2098.72 931.794 2097.35 932.009 2096.11 932.177 2094.93 932.297 2093.8 932.378 2092.68 932.418 2091.51 932.425 2090.9 932.418 2090.34 932.407 2089.31 932.374 2088.34 932.323 2087.39 932.25 2086.43 932.152 2085.43 932.02 2083.77 931.773 2082.47 931.55 2081.5 931.379 2080.21 931.182 2079.55 931.106 2079.34 931.084 2078.95 931.073 2078.59 931.098 2078.27 931.164 2077.98 931.266 2077.74 931.404 2077.53 931.576 2077.35 931.783 2077.29 931.9 2077.22 932.039 2077.12 932.381 2077.04 932.793 2077 933.249 2077 933.485 2077.01 933.784 2077.06 934.382 2077.19 934.987 2077.37 935.592 2077.6 936.197 2077.9 936.806 2078.26 937.414 2078.67 938.023 2078.9 938.329 2079.09 938.562 2079.69 939.185 2080.39 939.867 2081.06 940.465 2081.33 940.672 2081.69 940.939 2082.43 941.438 2083.21 941.897 2084.02 942.316 2084.85 942.695 2085.7 943.027 2086.57 943.315 2087.44 943.552 2087.88 943.65 2088.38 943.752 2089.19 943.891 2089.95 943.967 2090.87 943.996 2091.47 944 2092.19 944 2093.08 943.964 2093.62 943.916 2094.14 943.847 2094.66 943.752 2095.52 943.552 2096.21 943.362 2096.47 943.289 2097.02 943.103 2097.61 942.881 2098.21 942.626 2098.81 942.349 2099.4 942.05 2099.96 941.744 2100.49 941.431 2100.73 941.274 2100.91 941.15 2101.31 940.855 2101.96 940.337 2102.82 939.576 2103.39 939.014 2103.71 938.672 2103.84 938.515 2103.99 938.333 2104.28 937.946 2104.56 937.545 2104.82 937.134 2105.06 936.711 2105.28 936.281 2105.47 935.847 2105.64 935.413 2105.71 935.198 2105.79 934.921 2105.92 934.346 2105.99 933.766 2106 933.205 2105.96 932.676 2105.87 932.199 2105.76 931.893 2105.68 931.711 2105.58 931.554 2105.48 931.423 2105.42 931.368 2105.29 931.262 2105.11 931.153 2104.99 931.098 2104.75 931.044 2104.33 931.007 2104.03 931.004 2103.7 931 2103.11 931.014 2102.95 931.033ZM2090.96 939.605 2091.15 939.645 2091.4 939.692 2091.6 939.692 2091.85 939.645 2092.04 939.605 2092.17 939.576 2092.46 939.532 2092.94 939.492 2093.61 939.484 2094.08 939.517 2094.37 939.554 2094.5 939.579 2094.63 939.608 2094.9 939.685 2095.31 939.838 2095.85 940.097 2096.19 940.312 2096.38 940.461 2096.46 940.534 2096.56 940.625 2096.72 940.807 2096.85 940.986 2096.95 941.154 2097.01 941.307 2097.04 941.438 2097.03 941.54 2096.97 941.609 2096.93 941.627 2096.69 941.7 2096.17 941.868 2095.89 941.963 2095.25 942.152 2095 942.214 2094.53 942.323 2094.24 942.396 2094.01 942.447 2093.4 942.528 2092.67 942.582 2091.87 942.608 2091.03 942.608 2090.24 942.582 2089.52 942.528 2088.95 942.447 2088.73 942.396 2088.49 942.334 2088.1 942.24 2087.65 942.127 2086.75 941.861 2086.28 941.704 2086.15 941.649 2086.1 941.631 2086.04 941.584 2085.99 941.525 2085.97 941.456 2085.98 941.369 2086.01 941.27 2086.09 941.099 2086.18 940.957 2086.28 940.829 2086.47 940.6 2086.69 940.396 2086.94 940.21 2087.22 940.046 2087.55 939.893 2087.92 939.754 2088.34 939.619 2088.58 939.554 2088.66 939.535 2088.9 939.506 2089.35 939.481 2090.06 939.495 2090.56 939.539 2090.84 939.579 2090.96 939.605Z"
+                                fill="#FFF" fill-rule="evenodd" />
+                        </g>
+                    </svg>
+                    Emoti<span
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">Bert</span>
+                </a>
+
+                <div class="flex w-1/2 justify-end content-center">
+                    <a class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                        href="https://twitter.com/intent/tweet?url=#">
+                        <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <path
+                                d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                        href="https://www.facebook.com/sharer/sharer.php?u=#">
+                        <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full pt-14 pb-4 text-sm text-center md:text-center">
+            <h1
+                class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-center">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+                    De l'encre au cœur...
+                </span>
+
+            </h1>
+            <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-center">
+                nous traduisons vos émotions!
+            </p>
+        </div>
+        <!--Main-->
+        <div class="container  pt-6 md:pt-12 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <!--Left Col-->
+            <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+                <div class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4" method="post">
+                    <form method="post" action="{% url 'sentiment_analysis' %}">
+                        {% csrf_token %}
+                        <div class="mb-4">
+                            <div class="mb-4 flex items-center">
+                                <label id="emotionLabel" class="block text-blue-300 py-2 font-bold mb-2 mr-2"
+                                    for="emailaddress">
+                                    Veuillez saisir le texte.
+                                </label>
+                                {% if prediction %}
+                                <div class="flex items-center justify-rigth">
+                                    <span class="text-2xl ml-20">{{ prediction|safe }}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="flex items-center">
+                                <textarea id="emotionIcon_Area"
+                                    class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                                    name="text" maxlength="140" rows="7">{{ original_text }}
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center gap-2 mb-2">
+                            <button id="emotionIcon_Button"
+                                class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                                type="submit">
+                                Analyser mon sentiment
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!--Center Col-->
+            <div class="flex flex-col w-full xl:w-1/5 justify-center lg:items-center overflow-y-hidden pt-6 md:pt-0">
+
+                <div class="flex flex-col items-center justify-center pt-5">
+                    <h2 class="mb-5 text-center text-2xl ">Neutralisez vos textes</h2>
+
+                    <div class="flex justify-center gap-2 mb-2">
+
+                        <button
+                            class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded-lg text-3xl focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                            type="button" data-sentiment="neutre" onclick="translateSentiment(event)">
+                            &#128528;
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Right Col-->
+            <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+                <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-20 mb-4">
+                    <div class="mb-4">
+                        <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress2">
+                            Texte traduit.
+                        </label>
+                        <textarea
+                            class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                            id="emailaddress2" type="text" maxlength="140" rows="7"></textarea>
+                        <span id="sentiment-icon"></span>
+                    </div>
+                </form>
+            </div>
+
+            <!--Footer-->
+            <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+                <a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; App 2023</a>
+                - Template by
+                <a class="text-gray-500 no-underline hover:no-underline" href="#">EmotiBert</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    function translateSentiment(event) {
+        // capturar el texto y el sentimiento
+        var sentiment = event.target.dataset.sentiment;
+        var text = document.querySelector('#emotionIcon_Area').value;
+
+        console.log(text);
+        // solicitud AJAX a servidor Django
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/translate/', true);  
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+        var csrftoken = getCookie('csrftoken');  // Obtener token de las cookies
+        xhr.setRequestHeader('X-CSRFToken', csrftoken);
+
+        xhr.onreadystatechange = function() {
+            console.log(this.responseText);
+            if (this.readyState === 4 && this.status === 200) {
+                // actualizacion con el resultado
+                document.querySelector('#emailaddress2').value = this.responseText;
+            }
+        };
+
+        // Envía la solicitud
+        xhr.send('text=' + encodeURIComponent(text) + '&sentiment=' + encodeURIComponent(sentiment));
+    }
+</script>
+
+
+</html>

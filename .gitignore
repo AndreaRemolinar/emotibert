@@ -1,0 +1,68 @@
+# Ignorar entornos virtuales
+.venv/
+env/
+env/Lib
+venv/
+
+# Ignorar archivos y carpetas de caché de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignorar archivos de configuraciones de VSCode
+.vscode/
+vscode/
+
+# Ignorar historiales de edición
+.history/
+.analyzer/.history/
+.static/.history/
+
+# Ignorar archivos de notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignorar modelos y checkpoints grandes
+analyzer/my_t5_style_transfer_model/
+analyzer/path_to_save_model/
+analyzer/ProccessingModel/checkpoints/
+analyzer/models/
+models/
+ProcessingModel/checkpoints/
+
+# Ignorar migraciones de Django
+analyzer/migrations/
+
+# Ignorar bases de datos locales
+db.sqlite3
+
+# Ignorar archivos generados
+*.log
+*.pot
+
+# Ignorar archivos ZIP y binarios
+*.zip
+*.tar.gz
+*.rar
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de imágenes (salvo que sean parte del proyecto)
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Ignorar dependencias del entorno
+Library/
+Lib/
+Include/
+Scripts/
+share/
+pyvenv.cfg
+
+# Ignorar archivos sensibles o de configuración personal
+.env
+*.env
